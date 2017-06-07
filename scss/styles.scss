@@ -143,8 +143,14 @@ body {
   }
 }
 
+.nav-up {
+        top: -40px; // same as header height. use variables in LESS/SASS
+    }
+
 header {
-    position: absolute;
+    //position: absolute; 
+    position: fixed;
+    transition: top 0.2s ease-in-out;
     top: 0;
     left: 0;
     right: 0;
@@ -154,15 +160,20 @@ header {
     animation-iteration-count: 1;
     animation-timing-function: ease;
     animation-duration: 0.75s;
+    
+
+    
 
     ul {
         display: inline-block;
         background: $background;
         text-align: center;
-        padding: 20px;
-        margin: 0;
-        border-bottom-right-radius: 75px;
-        border-bottom-left-radius: 75px;
+        padding: 30px;
+        padding-left:  120px;
+        padding-right: 120px;
+        margin: 0;             
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
 
     li {
