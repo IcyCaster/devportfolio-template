@@ -144,8 +144,28 @@ body {
 }
 
 .nav-up {
-        top: -40px; // same as header height. use variables in LESS/SASS
-    }
+    top: -100px; // same as header height. use variables in LESS/SASS
+}
+
+.sliding-middle-out {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+}
+.sliding-middle-out:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.sliding-middle-out:hover:after {
+	width: 100%;
+	background: blue;
+}
+
 
 header {
     //position: absolute; 
@@ -161,35 +181,34 @@ header {
     animation-timing-function: ease;
     animation-duration: 0.75s;
     
-
-    
-
     ul {
         display: inline-block;
         background: $background;
         text-align: center;
-        padding: 30px;
-        padding-left:  120px;
-        padding-right: 120px;
+        padding: 20px;
+        padding-left:  75px;
+        padding-right: 75px;
         margin: 0;             
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px;
     }
 
     li {
-        display: inline-block;
+        display: inline-block;        
     }
 
+    
     a {
         display: block;
         color: $base-color;
-        padding: 10px;
-
+        padding: 15px;
+      
         &:hover {
             color: $base-color-hover;
             text-decoration: none;
             background: #eee;
             border-radius: 4px;
+                       
         }
 
         &:focus {
@@ -209,6 +228,7 @@ header {
 }
 
 #menu {
+    font-size: 1.25em;
     &.active {
         display: block;
     }

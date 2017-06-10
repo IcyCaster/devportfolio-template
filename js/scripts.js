@@ -97,9 +97,11 @@
 
 })(jQuery);
 
+
+
 var lastScrollTop = 0;
 var delta = 5;
-var navbarHeight = $('header').outerHeight();
+var navbarHeight = $('header').height();
 var didScroll;
 
 $(window).scroll(function(event) {
