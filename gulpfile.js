@@ -4,7 +4,7 @@ var uglify = require('gulp-uglify');
 var sass = require('gulp-sass');
 var rename = require('gulp-rename');
 var autoprefixer = require('gulp-autoprefixer');
-var deploy = require('gh-pages');
+var deploy = require('gulp-gh-pages');
 
 /**
  * Push build to gh-pages
