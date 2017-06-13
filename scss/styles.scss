@@ -165,9 +165,9 @@ header {
         background: $background;
         text-align: center;
         padding: 20px;
-        padding-left:  70px;
-        padding-right: 70px;
-        margin: 0;             
+        padding-left:  135px;
+        padding-right: 135px;
+        margin: 0;   
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px;
     }
@@ -372,7 +372,7 @@ footer {
         left: 0;
         right: 0;
         margin: 0 auto;
-        background: $base-color;
+        background: $accent-base-color;
     }
 }
 
@@ -449,6 +449,7 @@ footer {
     color: #fff;
 
     span {
+        color: #fff;
         cursor: pointer;
         display: block;
         margin: 0 auto;
@@ -505,6 +506,8 @@ footer {
     ----- 6. Experience Styles -----
     --------------------------------
 */
+
+
 
 #experience {
     padding: 50px 15px;
@@ -585,7 +588,7 @@ footer {
 
 .vtimeline-icon {
     position: relative;
-    color: #fff;
+    color: $accent-base-color;
     width: 50px;
     height: 50px;
     background: $base-color;
@@ -643,7 +646,7 @@ footer {
     }
 
     span {
-        color: $text;
+        color: $accent-base-color;
         float: right;
     }
 
